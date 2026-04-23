@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_minesweeper
+
+import std::io
+use ltl_minesweeper as lib
+
+fn main() {
+    io::println("ltl_minesweeper demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
